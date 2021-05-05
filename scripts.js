@@ -20,8 +20,9 @@ $(document).ready(function () {
     stagePadding: 200,
     loop: true,
     dots: false,
-    //   autoplay: true,
+    autoplay: true,
     center: true,
+    autoplaySpeed: 5000
   });
 });
 

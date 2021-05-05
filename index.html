@@ -58,11 +58,20 @@
       integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
       crossorigin="anonymous"
     />
-
+    <!-- Link fontawesome here -->
+    <script
+      src="https://kit.fontawesome.com/3285114a98.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- My CSS -->
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
+    <div class="social-icon">
+      <i class="fab fa-facebook-f"></i>/ <i class="fab fa-twitter"></i> /
+      <i class="fab fa-linkedin-in"></i> /
+      <i class="fab fa-instagram"></i>
+    </div>
     <div id="fullpage">
       <div class="section">
         <!-- Add classes where necessary and style the section appropriately -->
@@ -81,11 +90,6 @@
           <img src="./images/sneaker3.jpeg" alt="Sneaker" data-tilt />
         </div>
       </div>
-      <div class="social-icon">
-        <i class="fab fa-facebook-f"></i>/ <i class="fab fa-twitter"></i> /
-        <i class="fab fa-linkedin-in"></i> /
-        <i class="fab fa-instagram"></i>
-      </div>
       <div class="section">
         <!-- Add classes where necessary and style the section appropriately -->
         <div id="productPage" class="content">
@@ -97,9 +101,18 @@
               </h2>
             </div>
             <div class="text-container">
-              <p>456 Shoes Delivered</p>
-              <p>560 New Articles</p>
-              <p>786 Happy Customers</p>
+              <p>
+                456 <br />
+                Shoes Delivered
+              </p>
+              <p>
+                560 <br />
+                New Articles
+              </p>
+              <p>
+                786 <br />
+                Happy Customers
+              </p>
             </div>
           </header>
           <!-- Product slider, please add your own classes as well to the HTML -->
@@ -108,25 +121,36 @@
             <div class="product">
               <img src="./images/sneaker1.png" alt="Sneaker" />
               <h3>White Chucks</h3>
-              <button onclick="openModal()">View Detail</button>
+              <div class="slider-btn">
+                <button onclick="openModal()">View Detail</button>
+              </div>
             </div>
             <!-- Product Item -->
             <div class="product">
               <img src="./images/sneaker2.png" alt="Sneaker" />
-              <h3>White Chucks</h3>
-              <button onclick="openModal()">View Detail</button>
+              <h3>Blue Chucks</h3>
+              <div class="slider-btn">
+                <div class="slider-btn">
+                  <button onclick="openModal()">View Detail</button>
+                </div>
+              </div>
             </div>
             <!-- Product Item -->
             <div class="product">
-              <img src="./images/sneaker3.jpeg" alt="Sneaker" />
-              <h3>White Chucks</h3>
+              <button onclick="openModal()">View Detail</button>
+              <div class="slider-btn">
+                <img src="./images/sneaker3.jpeg" alt="Sneaker" />
+              </div>
+              <h3>Jordan 1's</h3>
               <button onclick="openModal()">View Detail</button>
             </div>
             <!-- Product Item -->
             <div class="product">
               <img src="./images/sneaker4,jpeg" alt="Sneaker" />
-              <h3>White Chucks</h3>
-              <button onclick="openModal()">View Detail</button>
+              <h3>Black Air Max</h3>
+              <div>
+                <button onclick="openModal()">View Detail</button>
+              </div>
             </div>
           </div>
           <div id="modal">
@@ -140,6 +164,7 @@
           </div>
         </div>
       </div>
+
       <div class="section">
         <div id="testimonialPage" class="content">
           <!-- Page header -->
