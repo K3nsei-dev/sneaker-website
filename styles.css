@@ -159,10 +159,11 @@ body {
   gap: 20px;
 }
 
-.social-icon:hover {
+.social-icon .fab:hover {
   background: #ed2d34;
   transition: 0.3s ease-in-out;
   color: white;
+  padding: 10px;
 }
 
 .page-header-container {
