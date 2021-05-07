@@ -22,7 +22,7 @@ $(document).ready(function () {
     dots: false,
     autoplay: true,
     center: true,
-    autoplaySpeed: 5000
+    autoplaySpeed: 5000,
   });
 });
 
@@ -47,9 +47,11 @@ fetch(randomUserURL)
     users.forEach((user) => {
       testimonialContainer.innerHTML += `
                 <div class="testimonial">
+                    <i class="fas fa-quote-left"></i>
                     <q class="testimonial-message">Lorem ipsum dolor sit amet consectetur adipisicing elit.</q>
                     <img class="testimonial-img" src="${user.picture.large}" alt="${user.name.first} ${user.name.last}">
                     <h4 class="testimonial-name">${user.name.first} ${user.name.last}</h4>
+                    <i class="fas fa-quote-right"></i>  
                 </div>
             `;
     });
