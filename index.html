@@ -234,7 +234,12 @@
             <!-- Please insert location, contact numbers and email elements here -->
           </div>
           <!-- Create new form on FORMSPREE and insert ULR in the ACTION ATTRIBUTE -->
-          <form id="contact-form">
+          <form
+          action="https://formspree.io/f/mayaqzwn"
+          method="POST"
+          id="contact-form"
+        >
+          <div class="form-items">
             <input
               class="contact-input"
               type="text"
@@ -243,6 +248,9 @@
               placeholder="Name"
               required
             />
+          </div>
+
+          <div class="form-items">
             <input
               class="contact-input"
               type="tel"
@@ -251,6 +259,9 @@
               placeholder="Contact No"
               required
             />
+          </div>
+
+          <div class="form-items">
             <input
               class="contact-input"
               type="email"
@@ -259,14 +270,18 @@
               placeholder="Email"
               required
             />
+          </div>
+
+          <div class="form-items">
             <textarea
               class="contact-input"
               name="message"
               id="message"
               placeholder="Type your message here"
             ></textarea>
-            <button class="button" type="submit">Submit Information</button>
-          </form>
+          </div>
+          <button class="button" type="submit">Submit Information</button>
+        </form>
         </div>
       </div>
     </div>
