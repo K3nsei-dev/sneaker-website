@@ -120,7 +120,7 @@
             <!-- Product Item -->
             <div class="product">
               <img src="./images/sneaker1.png" alt="Sneaker" />
-              <h3>White High Top Converse</h3>
+              <h3>Travs Scott x Nike Air Force 1</h3>
               <div class="slider-btn">
                 <button onclick="openModal()">View Detail</button>
               </div>
@@ -129,21 +129,21 @@
             <div class="product">
               <img src="./images/sneaker2.png" alt="Sneaker" />
               <h3>Yeezy Boost 700</h3>
-                <div class="slider-btn">
-                  <button onclick="openModal()">View Detail</button>
+              <div class="slider-btn">
+                <button onclick="openModal()">View Detail</button>
               </div>
             </div>
             <!-- Product Item -->
             <div class="product">
               <img src="./images/sneaker3.jpeg" alt="Sneaker" />
               <h3>Air Jordan 1</h3>
-                  <div class="slider-btn">
+              <div class="slider-btn">
                 <button onclick="openModal()">View Detail</button>
               </div>
             </div>
             <!-- Product Item -->
             <div class="product">
-              <img src="./images/sneaker4-removebg.png" alt="Sneaker">
+              <img src="./images/sneaker4-removebg.png" alt="Sneaker" />
               <h3>Air Jordan Retro 1</h3>
               <div class="slider-btn">
                 <button onclick="openModal()">View Detail</button>
@@ -151,13 +151,54 @@
             </div>
           </div>
           <div id="modal">
-            <!-- Add modal content here. Please pay careful 
-                attention to layout and styling, and please ignore any functionality 
-                eg: switching images on click.
-                *PS* you do not have to create multiple of these, they should all look the same -->
-            <h2>Modal Content</h2>
-            <!-- Button to close modal. Please style appropriately -->
-            <button onclick="openModal()">Close</button>
+            <div class="modal-left">
+              <img
+                class="sneaker-1"
+                src="./images/sneaker1.png"
+                alt="Sneaker"
+              />
+              <div class="sneaker-img">
+                <img src="./images/sneaker2.png" alt="Sneaker" />
+                <img src="./images/sneaker3.jpeg" alt="Sneaker" />
+                <img src="./images/sneaker4-removebg.png" alt="Sneaker" />
+              </div>
+            </div>
+            <div class="modal-right">
+              <!-- Add modal content here. Please pay careful 
+                  attention to layout and styling, and please ignore any functionality 
+                  eg: switching images on click.
+                  *PS* you do not have to create multiple of these, they should all look the same -->
+              <h4>Article PZ-1000-23</h4>
+              <h2>
+                <span style="color: #ed2d34">Travis Scott x Air Force 1</span>
+              </h2>
+              <p class="modal-p">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+                omnis, eos excepturi nesciunt quo quasi laborum, minima quae
+                vitae reprehenderit commodi! Sit sint nemo officia tempore
+                numquam vitae officiis incidunt?
+              </p>
+              <p class="text-size">
+                <span style="color: #ed2d34">Size:</span> 38 39 40 41 42 43 44
+                45
+              </p>
+              <p class="text-size">
+                <span style="color: #ed2d34">Qty:</span>
+                <input type="number" class="count" name="qty" value="1" />
+                <span style="color: #ed2d34">Color:</span>
+                <input type="color" id="color-btn" value="#ffffff" />
+                <input type="color" id="color-btn" value="#add8e6" />
+                <input type="color" id="color-btn" value="#FFA500" />
+              </p>
+              <p class="text-size">
+                <span style="color: #ed2d34">$400</span>
+              </p>
+              <!-- Button to close modal. Please style appropriately -->
+              <!-- <div class="slider-btn">
+              </div> -->
+              <a class="buy-now slider-btn" href="#product">Buy Now</a>
+              <button class="close-btn" onclick="openModal()">X</button>
+            </div>
           </div>
         </div>
       </div>
