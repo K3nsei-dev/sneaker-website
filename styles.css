@@ -309,6 +309,7 @@ body {
   text-decoration: none;
   white-space: nowrap;
   background-color: white;
+  border: 1px solid white;
   /* display: flex; */
 }
 
