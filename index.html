@@ -190,9 +190,11 @@
                 <input type="color" id="color-btn" value="#add8e6" />
                 <input type="color" id="color-btn" value="#FFA500" />
               </p>
-              <p class="text-size">
-                <span style="color: #ed2d34">$400</span>
-              </p>
+              <div>
+                <p>
+                  <span style="color: #ed2d34">$400</span>
+                </p>
+              </div>
               <!-- Button to close modal. Please style appropriately -->
               <!-- <div class="slider-btn">
               </div> -->
@@ -204,11 +206,11 @@
       </div>
 
       <div class="section">
-        <div id="testimonialPage" class="content">
+        <div id="testimonialPage" class="content-testimonial">
           <!-- Page header -->
-          <header class="page-header-container">
-            <h2 class="page-heading">Best In Business</h2>
-            <h3 class="page-subtitle"> <span style="color: #ed2d34;">Happy Customers</span> </h3>
+          <header class="page-header-testimonial">
+            <h4 class="page-heading-testimonial">Best In Business</h4>
+            <h2 class="page-subtitle"> <span style="color: #ed2d34;">Happy Customers</span> </h2>
           </header>
           <div id="testimonial-slider" class="owl-carousel">
             <!-- The content for the testimonials has been created using JavaScript. 
@@ -220,68 +222,106 @@
       <div class="section">
         <div id="contactPage" class="content">
           <!-- Page header -->
-          <header class="page-header-container">
-            <h2 class="page-heading">Questions?</h2>
-            <h3 class="page-subtitle">Let's get in touch</h3>
+          <header class="page-header-contact">
+            <h3 class="page-heading1">Questions?</h3>
+            <h3 class="page-subtitle"> <span style="color: #ed2d34;">Let's get in touch</span></h3>
           </header>
           <!-- Contact Details -->
           <div class="contact-details-container">
-            <h4 class="contact-details-heading">Warehouse Location</h4>
-            <p class="contact-details-description">
-              There are many variations of passages of Lorem Ipsum available,
-              but the majority have suffered .
-            </p>
-            <!-- Please insert location, contact numbers and email elements here -->
-          </div>
-          <!-- Create new form on FORMSPREE and insert ULR in the ACTION ATTRIBUTE -->
-          <form
-          action="https://formspree.io/f/mayaqzwn"
-          method="POST"
-          id="contact-form"
-        >
-          <div class="form-items">
-            <input
-              class="contact-input"
-              type="text"
-              name="full_name"
-              id="full_name"
-              placeholder="Name"
-              required
-            />
-          </div>
+            <div class="stuff">
+              <h4 class="contact-details-heading">Warehouse Location</h4>
+              <p class="contact-details-description">
+                There are many variations of passages of Lorem Ipsum<br />
+                available, but the majority have suffered .
+              </p>
 
-          <div class="form-items">
-            <input
-              class="contact-input"
-              type="tel"
-              name="contact_no"
-              id="contact_no"
-              placeholder="Contact No"
-              required
-            />
-          </div>
+              <!-- Please insert location, contact numbers and email elements here -->
+              <div class="LCE">
+                <div class="location">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <p class="details">
+                    123 Park Avenue, New York,<br />
+                    United States
+                  </p>
+                </div>
+                <div class="cell">
+                  <i class="fas fa-phone-volume"> </i>
+                  <p class="details">+1 631 1234 5678 +1 631 1234 5678</p>
+                </div>
+                <div class="email">
+                  <i class="fas fa-paper-plane"></i>
+                  <p class="details">email@website.com</p>
+                </div>
+              </div>
 
-          <div class="form-items">
-            <input
-              class="contact-input"
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Email"
-              required
-            />
-          </div>
+              <div class="social">
+                <div class="icons">
+                  <i class="fab fa-facebook-f"></i>
+                </div>
 
-          <div class="form-items">
-            <textarea
-              class="contact-input"
-              name="message"
-              id="message"
-              placeholder="Type your message here"
-            ></textarea>
+                <div class="icons">
+                  <i class="fab fa-twitter"></i>
+                </div>
+
+                <div class="icons">
+                  <i class="fab fa-linkedin-in"></i>
+                </div>
+
+                <div class="icons">
+                  <i class="fab fa-instagram"></i>
+                </div>
+              </div>
+            </div>
+            <!-- Create new form on FORMSPREE and insert ULR in the ACTION ATTRIBUTE -->
+            <form
+              action="https://formspree.io/f/mayaqzwn"
+              method="POST"
+              id="contact-form"
+            >
+              <div class="form-items">
+                <input
+                  class="contact-input"
+                  type="text"
+                  name="full_name"
+                  id="full_name"
+                  placeholder="Name"
+                  required
+                />
+              </div>
+
+              <div class="form-items">
+                <input
+                  class="contact-input"
+                  type="tel"
+                  name="contact_no"
+                  id="contact_no"
+                  placeholder="Contact No"
+                  required
+                />
+              </div>
+
+              <div class="form-items">
+                <input
+                  class="contact-input"
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Email"
+                  required
+                />
+              </div>
+
+              <div class="form-items">
+                <textarea
+                  class="contact-input"
+                  name="message"
+                  id="message"
+                  placeholder="Type your message here"
+                ></textarea>
+              </div>
+              <button class="button" type="submit">Submit Information</button>
+            </form>
           </div>
-          <button class="button" type="submit">Submit Information</button>
-        </form>
         </div>
       </div>
     </div>
